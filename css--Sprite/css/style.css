@@ -1,0 +1,165 @@
+
+/*loading*/
+.loading-wrap{width:70px;height:70px;text-align:center;margin:60% auto 0;position: relative;}
+.loading_icon{position:absolute;top:0;left:0;width:100%;}
+#loading_inner{position:relative;line-height:70px;font-size:14px;z-index: 10;font-family: Arial;font-weight: bold;color: #444;}
+.loading-container p{text-align:center;font-size:14px;color:#777;}
+
+/*public*/
+.musicicon{position:absolute;width:10%;top:2%;right:4%;z-index: 10000;opacity: 0.7;}
+.arrow{
+	position:absolute;
+	top:85%;
+	left:46%;
+	width:8%;
+	padding-bottom:8%;
+	background:url(../img/arrow.png) top center no-repeat;
+	background-size:contain;
+}
+.page{
+	overflow-y: auto;
+
+}
+#wrapbox{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	overflow-y: auto;
+}
+
+/*pages*/
+.resize-wrapper{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	padding-bottom:177.5%;
+}
+
+/*
+temp
+.p1{background:url(../img/p1_bg.jpg) top center no-repeat;background-size:100% auto;}
+*/
+.p1_pic{
+	width:100%;
+	padding-bottom:100%;
+	margin: 5% auto 0 ;
+	background:url(../img/music.png) top center no-repeat;
+	background-size:contain;
+}
+
+.test{
+	width:23.28%;
+	padding-bottom:23.75%;
+	margin: 5% auto 0 ;
+	background:url(../img/img.png) top center no-repeat;
+	background-size:549.6% auto;
+	background-position: 65.970% 70.833%;
+}
+.test2{
+	width:13.125%;
+	padding-bottom:13.281%;
+	margin: 5% auto 0 ;
+	background:url(../img/img.png) top center no-repeat;
+	background-size:975% auto;
+	background-position: 32.245% 39.577%;
+}
+.text3{
+	width:34.375%;
+	padding-bottom:10.313%;
+	margin: 5% auto 0 ;
+	background:url(../img/img.png) top center no-repeat;
+	background-size:372.273%  auto;
+	background-position: 100% 16.857%;
+}
+.text3.on{
+	background-position: 100% 35.714%;
+
+}
+
+
+
+
+.textBox{
+	width: 100%;
+
+}
+.btn{
+	display: inline-block;
+	margin: 5% auto 0 45%;
+	color: black;
+	background: #ccc;
+	padding: 4%;
+	text-align: center;
+
+}
+
+.showClass{
+	width: 100%;
+	margin: 2% auto 0;
+	color: black;
+	padding: 2%;
+
+}
+.tap{
+
+}
+.getNumb{
+	display: inline-block;
+}
+font12L15{
+	font-size: 12px;
+	line-height: 15px;
+}
+font15L15{
+	font-size: 15px;
+	line-height: 15px;
+}
+
+.mvBtn{
+	width:34.688%;
+	padding-bottom:10.313%;
+	margin: 2% auto 0;
+	background:url(../img/img.png) top center no-repeat;
+	background-size:368.919% auto;
+	background-position:57.956% 8.857%;
+	/*background-position2:-57.956% -904.571%;*/
+
+}
+
+.ListenMusic{
+	background:url(../img/img.png) top center no-repeat;
+	width:34.375%;
+	padding-bottom:10.313%;
+	background-size:372.273% auto;
+	background-position:100% 16.857%;
+	background-position2:100% 1704.571%;
+}
+._9{
+	background:url(../img/img.png) top center no-repeat;
+	width:34.063%;
+	padding-bottom:23.438%;
+	background-size:375.688% auto;
+	background-position:26.955% 100%;
+	background-position2:0% 0%;
+	/*background-position2:26.955% 7822.581%;*/
+}
+._8{
+	background:url(../img/img.png) top center no-repeat;
+	width:23.281%;
+	padding-bottom:23.75%;
+	background-size:549.664% auto;
+	background-position:65.97% 70.833%;
+	background-position2:0% 0%;
+	/*background-position2:65.97% 5522.353%;*/
+}
+
+
+
+
+
+

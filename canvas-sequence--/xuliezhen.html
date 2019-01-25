@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas序列帧</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            /*background: #000;*/
+        }
+        .hidden{
+            display: none;
+        }
+        .RePlayBtn{
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            font-size: 50px;
+            line-height: 50px;
+            color: #fff;
+            border: 1px solid #000;
+            border-radius: 30px ;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas  id="test" width="640" height="1136"></canvas>
+    <canvas  id="testTemp" width="455" height="984"></canvas>
+    <div class="RePlayBtn">RePlay</div>
+</body>
+<script src="js/zepto.min.js"></script>
+<script src="js/canvasSeque.js"></script>
+<script>
+    $(function () {
+        // var canvasS=canvasSeque.initial({
+        //     sequence:false,// true雪碧图 false 全屏
+        //     imgSrc:'img/bg/', //图片路径
+        //     number:93,//序列帧数量  i=1 1-75
+        //     id:"test",// canvas idName
+        //     loop:true,
+        //     type:"jpg",  //全屏时设置
+        //     first:1,   //   多张起始 默认1
+        //     frame:10,   //   ms/
+
+        // });
+        var canvasS=canvasSeque.initial({
+            sequence:false,// true雪碧图 false 全屏
+            imgSrc:'img/temp1/', //图片路径
+            number:12,//序列帧数量  i=1 1-75
+            id:"test",// canvas idName
+            loop:true,
+            type:"png",  //全屏时设置
+            first:1,   //   多张起始 默认1
+            frame:10,   //   ms/
+
+        });
+
+        canvasS.picReady();
+        canvasS.start();
+
+
+        $(".RePlayBtn").on("touchstart",function () {
+            canvasS.start();
+//            canvasS.start();
+        });
+//         $("#test").on("touchend",function () {
+//             canvasS.pause();
+// //            canvasS.stop();
+//         });
+
+        var canvasS2=canvasSeque.initial({
+            sequence:true,// true雪碧图 false 全屏
+            imgSrc:'img/share.png', //图片路径
+            number:25,//序列帧数量  i=0  0-24
+            id:"testTemp",// canvas idName
+            loop:true,
+            frame:10,   //   ms/
+        });
+        canvasS2.picReady();
+        canvasS2.start();
+//      序列帧返回
+        canvasS2.control=function () {
+//            console.log(canvasS2.i)
+            if(canvasS2.i==0){
+                canvasS2.go();
+            }
+            if(canvasS2.i==24){
+                canvasS2.return();
+            }
+        };
+
+    });
+
+
+
+
+</script>
+
+</html>

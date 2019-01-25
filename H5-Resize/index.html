@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>多种适配插件</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="address=no" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<audio id="bgm" src="sound/page.mp3" preload="auto" ></audio>
+		<div id="wrapbox">
+			<div class="soundPlus z9 cssCenter ">音乐+</div>
+			<div class="soundSub z9 cssCenter">音乐-</div>
+			<!-- 主页面 -->
+			<div class="page-container ">
+				<!--字体 元素缩放-->
+				<div data-page="1" class="page p1 ">
+					<div class="text1 cssCenter">发呆发呆</div>
+					<div class="text2">发呆发个发发</div>
+					<div class="assamPic assamPic1"></div>
+
+				</div>
+				<!--marginTop 向上推进-->
+				<div data-page="2" class="page p2 cur">
+					<div class="assamPic assamPic2"></div>
+				</div>
+				<!--margin 居中 《 屏幕-->
+				<div data-page="3" class="page p3  ">
+					<div class="p1_iconCat"></div>
+				</div>
+				<!--margin 居中 = 屏幕-->
+				<div data-page="4" class="page p4  ">
+					<!--<div class="endingWrap endingWrap1 "></div>-->
+					<div class="endingWrap endingWrap2"></div>
+				</div>
+				<!--margin 居中 》 屏幕-->
+				<div data-page="5" class="page p5 ">
+					<div class="endingWrap endingWrap3"></div>
+				</div>
+				<div data-page="6" class="page p6 ">
+					<!--<div class="startPage"></div>-->
+					<video src="video/1_1.mp4" class="video video1"></video>
+					<div class="soundVideo cssCenter z9">视频静音</div>
+				</div>
+				<div data-page="6" class="page p7 ">
+					<!--<div class="startPage"></div>-->
+					<video src="video/1_1.mp4" class="video video2"></video>
+					<div class="soundVideo cssCenter z9">视频静音</div>
+				</div>
+
+
+			</div>
+		</div>
+
+		<script src="js/zepto.min.js"></script>
+		<script src="js/resizeDiv.js"></script>
+		<script src="js/soundjs-NEXT.combined.js"></script>
+		<script src="js/script.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+	</body>
+</html>
